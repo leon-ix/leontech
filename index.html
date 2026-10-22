@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080914">
+
+<meta name="google-site-verification" content="ETE_z5daXxxZrLh_CCwc2RcZcIuA5KcvwtYpP9lkYNc" />
+  
+<meta name="description" content="LEON TECH builds modern websites, Android applications, AI solutions and custom digital experiences.">
+<meta name="keywords" content="LEON TECH, Web Development, Android Apps, AI Solutions, UI UX Design">
+<meta property="og:title" content="LEON TECH | Build Beyond Limits">
+<meta property="og:description" content="Turning bold ideas into powerful digital experiences.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="/Leon-tech/file_000000006f948208aac2f568ad7c3d62.png">
+<meta property="og:site_name" content="LEON TECH">
+<meta property="og:image" content="https://leon-ix.github.io/Leon-tech/file_000000006f948208aac2f568ad7c3d62.png">
+<meta property="og:url" content="https://leon-ix.github.io/Leon-tech/">
+<title>LEON TECH | Build Beyond Limits</title>
+
+<style>
+:root{
+  --bg:#080914;
+  --panel:#111426;
+  --panel2:#151a30;
+  --blue:#39d5ff;
+  --purple:#9b5cff;
+  --pink:#ff61c7;
+  --text:#f5f7ff;
+  --muted:#a5acc5;
+  --border:#ffffff14;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.65;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  background:
+    radial-gradient(ellipse at 10% 10%,#39d5ff0b,transparent 40%),
+    radial-gradient(ellipse at 90% 55%,#9b5cff0d,transparent 42%);
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.container{width:min(1120px,90%);margin:auto}
+section{padding:90px 0;position:relative}
+.gradient{
+  background:linear-gradient(100deg,var(--blue),#a49aff,var(--purple),var(--pink));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.eyebrow{
+  color:var(--blue);
+  font-size:12px;
+  font-weight:bold;
+  letter-spacing:3px;
+}
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:#080914eF;
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--border);
+}
+nav{
+  min-height:76px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+.logo{
+  font-size:23px;
+  font-weight:900;
+  letter-spacing:2px;
+  white-space:nowrap;
+}
+.logo span{color:var(--blue)}
+.navlinks{display:flex;align-items:center;gap:24px}
+.navlinks a{
+  font-size:13px;
+  color:var(--muted);
+  transition:.2s;
+}
+.navlinks a:hover{color:var(--blue)}
+.menu{
+  display:none;
+  color:white;
+  background:none;
+  border:0;
+  font-size:26px;
+  cursor:pointer;
+}
+.btn{
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  padding:13px 21px;
+  border:1px solid #ffffff25;
+  border-radius:12px;
+  color:white;
+  font-weight:bold;
+  font-size:14px;
+  transition:transform .25s,border-color .25s,box-shadow .25s;
+  cursor:pointer;
+}
+.btn:hover{
+  transform:translateY(-3px);
+  border-color:var(--blue);
+  box-shadow:0 8px 30px #39d5ff20;
+}
+.btn-primary{
+  color:#071019;
+  border:0;
+  background:linear-gradient(105deg,var(--blue),#aaa0ff);
+  box-shadow:0 0 28px #39d5ff20;
+}
+.btn-primary:hover{box-shadow:0 0 35px #39d5ff45}
+.hero{
+  min-height:650px;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  overflow:hidden;
+  padding:100px 0;
+}
+#particles{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+}
+.glow{
+  position:absolute;
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  filter:blur(110px);
+  opacity:.20;
+  pointer-events:none;
+}
+.g1{background:var(--blue);top:5%;left:-150px}
+.g2{background:var(--purple);bottom:0;right:-130px}
+.hero-content{position:relative;z-index:1}
+.badge{
+  display:inline-block;
+  padding:8px 15px;
+  border:1px solid #39d5ff50;
+  border-radius:50px;
+  color:var(--blue);
+  background:#39d5ff09;
+  font-size:11px;
+  letter-spacing:2px;
+  margin-bottom:25px;
+}
+h1{
+  font-size:clamp(43px,8vw,86px);
+  line-height:1.08;
+  letter-spacing:-3px;
+  margin-bottom:23px;
+}
+.hero p{
+  max-width:660px;
+  color:var(--muted);
+  margin:0 auto 30px;
+  font-size:16px;
+}
+.buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:13px;
+}
+.hero-meta{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:23px;
+  margin-top:36px;
+  color:var(--muted);
+  font-size:12px;
+}
+.hero-meta span::before{content:"✦ ";color:var(--blue)}
+.section-head{text-align:center;margin-bottom:43px}
+h2{font-size:clamp(30px,5vw,45px);line-height:1.2;margin:10px 0}
+.section-head p{color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{
+  padding:27px;
+  border:1px solid var(--border);
+  border-radius:20px;
+  background:linear-gradient(145deg,#15192d,#0d1020);
+  transition:transform .3s,border-color .3s,box-shadow .3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  border-color:#39d5ff70;
+  box-shadow:0 12px 35px #0003;
+}
+.icon{
+  width:52px;height:52px;
+  display:grid;place-items:center;
+  border-radius:15px;
+  background:#39d5ff12;
+  font-size:25px;
+  margin-bottom:18px;
+}
+.card h3{font-size:19px;margin-bottom:9px}
+.card p{font-size:13px;color:var(--muted)}
+.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:17px}
+.tag{
+  padding:4px 9px;
+  border-radius:7px;
+  border:1px solid var(--border);
+  color:#c5c9df;
+  font-size:10px;
+  background:#ffffff07;
+}
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:45px;
+}
+.about-box{
+  min-height:320px;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  border:1px solid #9b5cff55;
+  border-radius:25px;
+  background:radial-gradient(circle at center,#36205d,#101326 65%);
+}
+.about-symbol{
+  font-size:95px;
+  font-weight:900;
+  text-shadow:0 0 35px #39d5ff60;
+}
+.about p{color:var(--muted);margin:15px 0}
+.about .btn{margin-top:10px}
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin-top:55px;
+}
+.stat{
+  text-align:center;
+  padding:23px 10px;
+  border:1px solid var(--border);
+  border-radius:16px;
+  background:#ffffff04;
+}
+.stat strong{display:block;font-size:23px;color:var(--blue)}
+.stat span{font-size:12px;color:var(--muted)}
+.project-card{padding:0;overflow:hidden}
+.project-art{
+  min-height:160px;
+  display:grid;
+  place-items:center;
+  font-size:54px;
+  background:
+    radial-gradient(circle at 25% 30%,#39d5ff24,transparent 40%),
+    linear-gradient(135deg,#151e39,#322052);
+}
+.project-info{padding:23px}
+.project-info h3{margin-bottom:8px}
+.project-link{
+  display:inline-block;
+  margin-top:17px;
+  color:var(--blue);
+  font-size:13px;
+}
+.project-link:hover{text-decoration:underline}
+.price-card{position:relative}
+.price-label{
+  display:inline-block;
+  color:var(--blue);
+  font-size:11px;
+  letter-spacing:1px;
+  margin-bottom:12px;
+}
+.price{
+  font-size:27px;
+  font-weight:900;
+  margin:14px 0;
+}
+.price small{font-size:12px;color:var(--muted);font-weight:normal}
+.price-card ul{
+  list-style:none;
+  margin:20px 0;
+  color:var(--muted);
+  font-size:13px;
+}
+.price-card li{margin:10px 0}
+.price-card li::before{content:"✓ ";color:var(--blue)}
+.price-card .btn{width:100%;margin-top:7px}
+.featured{
+  border-color:#39d5ff70;
+  box-shadow:0 0 35px #39d5ff0c;
+}
+.price-note{
+  margin-top:20px;
+  text-align:center;
+  font-size:12px;
+  color:var(--muted);
+}
+.testimonial-note{
+  padding:25px;
+  border:1px dashed #ffffff25;
+  border-radius:18px;
+  text-align:center;
+  color:var(--muted);
+  font-size:13px;
+}
+.contact-grid{
+  display:grid;
+  grid-template-columns:.85fr 1.15fr;
+  gap:25px;
+}
+.contact-info,.form{
+  padding:28px;
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:20px;
+}
+.contact-info>p,.form>p{color:var(--muted);font-size:13px;margin:10px 0 22px}
+.contact-item{
+  padding:15px 0;
+  border-bottom:1px solid var(--border);
+}
+.contact-item:last-child{border-bottom:0}
+.contact-item strong{font-size:13px}
+.contact-item small{
+  display:block;
+  margin-top:4px;
+  color:var(--muted);
+  overflow-wrap:anywhere;
+}
+.contact-item a:hover{color:var(--blue)}
+.form .btn{width:100%;margin-top:10px}
+.notice{font-size:11px!important;color:var(--muted);margin-top:15px!important}
+.socials{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.socials a{
+  padding:8px 12px;
+  border:1px solid var(--border);
+  border-radius:9px;
+  color:var(--muted);
+  font-size:12px;
+}
+.socials a:hover{color:var(--blue);border-color:var(--blue)}
+footer{
+  padding:32px 0;
+  border-top:1px solid var(--border);
+  text-align:center;
+  color:var(--muted);
+  font-size:12px;
+}
+footer .logo{margin-bottom:7px}
+.back-top{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:50;
+  width:43px;
+  height:43px;
+  display:grid;
+  place-items:center;
+  border:1px solid #39d5ff55;
+  border-radius:13px;
+  background:#111426eF;
+  color:var(--blue);
+  font-size:20px;
+}
+.reveal{
+  opacity:0;
+  transform:translateY(22px);
+  transition:opacity .7s ease,transform .7s ease;
+}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(max-width:850px){
+  .navlinks{gap:14px}
+  .navlinks a{font-size:12px}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .contact-grid{grid-template-columns:1fr}
+}
+@media(max-width:650px){
+  .menu{display:block}
+  .navlinks{
+    display:none;
+    position:absolute;
+    top:76px;left:0;right:0;
+    padding:20px 5%;
+    background:#0b0d1b;
+    border-bottom:1px solid var(--border);
+    flex-direction:column;
+    align-items:flex-start;
+  }
+  .navlinks.open{display:flex}
+  .navlinks a{font-size:14px;padding:5px 0}
+  .hero{min-height:570px;padding:75px 0}
+  h1{letter-spacing:-1.5px}
+  section{padding:67px 0}
+  .grid{grid-template-columns:1fr}
+  .about{grid-template-columns:1fr;gap:28px}
+  .about-box{min-height:245px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .contact-info,.form{padding:22px}
+  .hero-meta{gap:12px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    scroll-behavior:auto!important;
+    animation:none!important;
+    transition:none!important;
+  }
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+<header>
+  <nav class="container">
+    <div>
+      <a class="logo" href="#home" aria-label="LEON TECH Home">LEON<span> TECH</span></a>
+      <p style="color:white;font-size:11px;margin-top:-5px;">
+        Founder: Sp. Leonsupriyan
+      </p>
+    </div>
+
+    <button class="menu" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <div class="navlinks" id="navlinks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="glow g1"></div>
+  <div class="glow g2"></div>
+
+  <div class="container hero-content">
+    <div class="badge">✦ INNOVATION · DESIGN · TECHNOLOGY</div>
+    <h1>Build Beyond<br><span class="gradient">Limits.</span></h1>
+    <p>We transform bold ideas into powerful digital experiences. From modern websites to Android applications and AI solutions, let's build something meaningful.</p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="#contact">Start a Project ↗</a>
+      <a class="btn" href="#services">Explore Services ↓</a>
+    </div>
+    <div class="hero-meta">
+      <span>Creative Solutions</span>
+      <span>Modern Technology</span>
+      <span>Mobile-First Design</span>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">WHAT WE DO</div>
+      <h2>Our <span class="gradient">Services</span></h2>
+      <p>Digital solutions designed around your vision.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card reveal">
+        <div class="icon">🌐</div>
+        <h3>Website Development</h3>
+        <p>Responsive business websites, portfolios and landing pages for mobile and desktop.</p>
+        <div class="tags"><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span><span class="tag">Responsive</span></div>
+      </article>
+      <article class="card reveal">
+        <div class="icon">📱</div>
+        <h3>Android Apps</h3>
+        <p>Modern mobile experiences with polished interfaces and useful features.</p>
+        <div class="tags"><span class="tag">Android</span><span class="tag">Mobile UI</span></div>
+      </article>
+      <article class="card reveal">
+        <div class="icon">🤖</div>
+        <h3>AI Solutions</h3>
+        <p>AI-powered assistants, smart workflows and intelligent digital tools.</p>
+        <div class="tags"><span class="tag">AI</span><span class="tag">APIs</span><span class="tag">Automation</span></div>
+      </article>
+      <article class="card reveal">
+        <div class="icon">⚙️</div>
+        <h3>Custom Software</h3>
+        <p>Purpose-built tools that simplify tasks and improve everyday workflows.</p>
+        <div class="tags"><span class="tag">Tools</span><span class="tag">Software</span></div>
+      </article>
+      <article class="card reveal">
+        <div class="icon">🎨</div>
+        <h3>UI/UX Design</h3>
+        <p>Thoughtful layouts, intuitive user journeys and polished visual experiences.</p>
+        <div class="tags"><span class="tag">UI Design</span><span class="tag">UX</span></div>
+      </article>
+      <article class="card reveal">
+        <div class="icon">🛠️</div>
+        <h3>Website Maintenance</h3>
+        <p>Website updates, improvements and troubleshooting for existing projects.</p>
+        <div class="tags"><span class="tag">Updates</span><span class="tag">Support</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="about">
+      <div class="about-box reveal">
+        <div>
+          <div class="about-symbol">L<span class="gradient">T</span></div>
+          <div class="eyebrow">IDEAS INTO REALITY</div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow">ABOUT LEON TECH</div>
+        <h2>Technology with<br><span class="gradient">Purpose.</span></h2>
+        <p>LEON TECH is a technology brand focused on modern digital experiences. We bring creativity and technology together through thoughtful design, useful applications and smart software.</p>
+        <p>Every great project begins with an idea. Let's explore what yours can become.</p>
+        <a class="btn btn-primary" href="#contact">Let's Talk ↗</a>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat reveal"><strong>Web</strong><span>Digital Experiences</span></div>
+      <div class="stat reveal"><strong>AI</strong><span>Smart Solutions</span></div>
+      <div class="stat reveal"><strong>Apps</strong><span>Mobile Products</span></div>
+      <div class="stat reveal"><strong>UI/UX</strong><span>Modern Design</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">OUR WORK</div>
+      <h2>Featured <span class="gradient">Projects</span></h2>
+      <p>A showcase of digital ideas and product concepts.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card project-card reveal">
+        <div class="project-art">💬</div>
+        <div class="project-info">
+          <h3>LEON AI</h3>
+          <p>An AI assistant project concept focused on making everyday digital tasks easier.</p>
+          <div class="tags"><span class="tag">AI</span><span class="tag">Assistant</span></div>
+          <a class="project-link" href="#contact">Discuss a similar project ↗</a>
+        </div>
+      </article>
+
+      <article class="card project-card reveal">
+        <div class="project-art">💻</div>
+        <div class="project-info">
+          <h3>Web Experiences</h3>
+          <p>Responsive website concepts with clean layouts and modern visual design.</p>
+          <div class="tags"><span class="tag">Web</span><span class="tag">Design</span></div>
+          <a class="project-link" href="#contact">Start your website ↗</a>
+        </div>
+      </article>
+
+      <article class="card project-card reveal">
+        <div class="project-art">⚡</div>
+        <div class="project-info">
+          <h3>Smart Tools</h3>
+          <p>Digital utility concepts focused on simplicity and productivity.</p>
+          <div class="tags"><span class="tag">Tools</span><span class="tag">Innovation</span></div>
+          <a class="project-link" href="#contact">Build a custom tool ↗</a>
+        </div>
+      </article>
+    </div>
+    <p class="price-note">Showcase descriptions are project concepts. Add verified screenshots and live links when available.</p>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">SIMPLE & TRANSPARENT</div>
+      <h2>Service <span class="gradient">Pricing</span></h2>
+      <p>Starting-price examples to help you plan your project.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card price-card reveal">
+        <span class="price-label">STARTER</span>
+        <h3>Basic Website</h3>
+        <div class="price">₹1,999 <small>starting at</small></div>
+        <p>A simple online presence for individuals and small projects.</p>
+        <ul>
+          <li>Single-page layout</li>
+          <li>Mobile-friendly design</li>
+          <li>Contact section</li>
+          <li>Basic SEO setup</li>
+        </ul>
+        <a class="btn" href="#contact">Enquire Now ↗</a>
+      </article>
+
+      <article class="card price-card featured reveal">
+        <span class="price-label">POPULAR CHOICE</span>
+        <h3>Business Website</h3>
+        <div class="price">Custom <small>quotation</small></div>
+        <p>A more complete website for a business or brand.</p>
+        <ul>
+          <li>Multiple sections or pages</li>
+          <li>Responsive design</li>
+          <li>Enquiry form integration</li>
+          <li>Social media links</li>
+        </ul>
+        <a class="btn btn-primary" href="#contact">Get a Quote ↗</a>
+      </article>
+
+      <article class="card price-card reveal">
+        <span class="price-label">CUSTOM SOLUTION</span>
+        <h3>Apps & AI</h3>
+        <div class="price">Custom <small>quotation</small></div>
+        <p>For mobile apps, AI assistants and tailored software.</p>
+        <ul>
+          <li>Project-based scope</li>
+          <li>Custom feature planning</li>
+          <li>UI and workflow design</li>
+          <li>Estimate before starting</li>
+        </ul>
+        <a class="btn" href="#contact">Discuss Your Idea ↗</a>
+      </article>
+    </div>
+    <p class="price-note">Prices are indicative starting points, not guaranteed quotes. Final pricing depends on features, content, hosting and project requirements.</p>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">OUR COMMITMENT</div>
+      <h2>Built Around <span class="gradient">Your Vision</span></h2>
+      <p>Clear communication and thoughtful solutions at every step.</p>
+    </div>
+    <div class="grid">
+      <article class="card reveal">
+        <div class="icon">🎯</div>
+        <h3>Purpose-Driven</h3>
+        <p>We focus on understanding your needs before planning a solution.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">📐</div>
+        <h3>Thoughtful Design</h3>
+        <p>We value clear layouts, accessible navigation and consistent styling.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">🤝</div>
+        <h3>Direct Communication</h3>
+        <p>Share your requirements and receive a project-specific discussion and estimate.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">LET'S CONNECT</div>
+      <h2>Have an <span class="gradient">Idea?</span></h2>
+      <p>Tell us what you want to build. Let's make it happen.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Start a Conversation</h3>
+        <p>Have a website, application or AI project in mind? Reach out by email or send an enquiry.</p>
+
+        <div class="contact-item">
+          ✉️ <strong>Email</strong>
+          <small><a href="mailto:Supriyan9500@gmail.com">Supriyan9500@gmail.com</a></small>
+        </div>
+
+        <div class="contact-item">
+          🌍 <strong>Digital Services</strong>
+          <small>Web · Android · AI · Software · Design</small>
+        </div>
+
+        <div class="contact-item">
+          ⚡ <strong>Project Enquiries</strong>
+          <small>Use the enquiry form to share your requirements.</small>
+        </div>
+
+        <div class="socials">
+          <a href="mailto:Supriyan9500@gmail.com">Email Us ↗</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSckbk9LkcVNkyGPgFL8ybEsjZ2dMnGs76U4sWU9BheSO9u7jA/viewform?usp=dialog" target="_blank" rel="noopener">Enquiry Form ↗</a>
+        </div>
+      </div>
+
+      <div class="form reveal">
+        <h3>Send an Enquiry</h3>
+        <p>Click below to open the official LEON TECH enquiry form. Complete and submit it to send your project details.</p>
+
+        <a class="btn btn-primary"
+           href="https://docs.google.com/forms/d/e/1FAIpQLSckbk9LkcVNkyGPgFL8ybEsjZ2dMnGs76U4sWU9BheSO9u7jA/viewform?usp=dialog"
+           target="_blank" rel="noopener">
+          Send Enquiry ↗
+        </a>
+
+        <p class="notice">Your details are submitted through Google Forms, not directly through this website. Email alerts require notification settings to be enabled in the form's owner account.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="logo">LEON<span> TECH</span></div>
+    <p>Building digital experiences with purpose.</p>
+    <p style="margin-top:12px">Contact: <a href="mailto:Supriyan9500@gmail.com">Supriyan9500@gmail.com</a></p>
+    <p style="margin-top:12px">© <span id="year"></span> LEON TECH. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="#home" class="back-top" aria-label="Back to top">↑</a>
+
+<script>
+const menuBtn = document.getElementById('menuBtn');
+const navlinks = document.getElementById('navlinks');
+
+menuBtn.addEventListener('click', () => {
+  const opened = navlinks.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded', String(opened));
+});
+
+navlinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navlinks.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  });
+});
+
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* Reveal sections as they enter the screen */
+const revealElements = document.querySelectorAll('.reveal');
+
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  revealElements.forEach(el => observer.observe(el));
+} else {
+  revealElements.forEach(el => el.classList.add('visible'));
+}
+
+/* Lightweight animated particles */
+(() => {
+  const canvas = document.getElementById('particles');
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let particles = [];
+  let width = 0;
+  let height = 0;
+  let animationId = null;
+
+  function resize() {
+    const rect = canvas.getBoundingClientRect();
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+    width = rect.width;
+    height = rect.height;
+    canvas.width = Math.floor(width * dpr);
+    canvas.height = Math.floor(height * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    const count = Math.min(55, Math.floor(width / 18));
+    particles = Array.from({ length: count }, () => ({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      r: Math.random() * 1.6 + 0.5,
+      vx: (Math.random() - 0.5) * 0.25,
+      vy: (Math.random() - 0.5) * 0.25
+    }));
+
+    draw(true);
+  }
+
+  function draw(staticFrame = false) {
+    ctx.clearRect(0, 0, width, height);
+
+    particles.forEach((p, i) => {
+      if (!staticFrame && !reduceMotion) {
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if (p.x < 0 || p.x > width) p.vx *= -1;
+        if (p.y < 0 || p.y > height) p.vy *= -1;
+      }
+
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(90,205,255,0.55)';
+      ctx.fill();
+
+      for (let j = i + 1; j < particles.length; j++) {
+        const q = particles[j];
+        const dx = p.x - q.x;
+        const dy = p.y - q.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist < 85) {
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(q.x, q.y);
+          ctx.strokeStyle = `rgba(100,150,255,${0.12 * (1 - dist / 85)})`;
+          ctx.lineWidth = 0.6;
+          ctx.stroke();
+        }
+      }
+    });
+
+    if (!reduceMotion) {
+      animationId = requestAnimationFrame(() => draw());
+    }
+  }
+
+  window.addEventListener('resize', () => {
+    if (animationId) cancelAnimationFrame(animationId);
+    resize();
+  });
+
+  resize();
+})();
+</script>
+  <script>
+(function () {
+  let audioContext;
+
+  function playClickSound() {
+    try {
+      audioContext = audioContext || new (window.AudioContext || window.webkitAudioContext)();
+
+      if (audioContext.state === "suspended") {
+        audioContext.resume();
+      }
+
+      const oscillator = audioContext.createOscillator();
+      const gain = audioContext.createGain();
+
+      oscillator.type = "sine";
+      oscillator.frequency.setValueAtTime(1100, audioContext.currentTime);
+      oscillator.frequency.exponentialRampToValueAtTime(
+        700,
+        audioContext.currentTime + 0.035
+      );
+
+      gain.gain.setValueAtTime(0.045, audioContext.currentTime);
+      gain.gain.exponentialRampToValueAtTime(
+        0.001,
+        audioContext.currentTime + 0.045
+      );
+
+      oscillator.connect(gain);
+      gain.connect(audioContext.destination);
+
+      oscillator.start();
+      oscillator.stop(audioContext.currentTime + 0.045);
+    } catch (error) {
+      // Sound unavailable: website continues working normally.
+    }
+  }
+
+  document.addEventListener("click", function (event) {
+    const button = event.target.closest(
+      "button, .btn, a.button, input[type='button'], input[type='submit']"
+    );
+
+    if (button) {
+      playClickSound();
+    }
+  });
+})();
+  </script>
+</body>
+  </html>
